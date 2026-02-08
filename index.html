@@ -8,6 +8,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script>
+      // Polyfill for process.env to prevent ReferenceErrors in the browser environment
+      // This ensures the app doesn't crash when it encounters process.env.API_KEY
+      window.process = window.process || { env: {} };
+      
       tailwind.config = {
         darkMode: 'class',
         theme: {
@@ -117,5 +121,7 @@
 </head>
   <body class="bg-slate-50 text-slate-900 dark:bg-[#030712] dark:text-slate-100 antialiased overflow-x-hidden">
     <div id="root"></div>
+    <!-- The module script tag below is crucial for loading the application -->
+    <script type="module" src="index.tsx"></script>
   </body>
 </html>

@@ -1,0 +1,8 @@
+{
+  "name": "Hashmi Digitals - Premium AI & Web Solutions",
+  "description": "Showcase of high-end AI-powered web applications and professional digital services by Hashmi Digitals.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

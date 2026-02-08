@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hashmi Digitals | Premium AI & Web Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Manrope', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                50: '#f5f3ff',
+                100: '#ede9fe',
+                200: '#ddd6fe',
+                300: '#c4b5fd',
+                400: '#a78bfa',
+                500: '#8b5cf6',
+                600: '#7c3aed',
+                700: '#6d28d9',
+                800: '#5b21b6',
+                900: '#4c1d95',
+              }
+            },
+            animation: {
+              'gradient-x': 'gradient-x 15s ease infinite',
+              'gradient-y': 'gradient-y 15s ease infinite',
+              'gradient-xy': 'gradient-xy 15s ease infinite',
+            },
+            keyframes: {
+              'gradient-y': {
+                '0%, 100%': {
+                  'background-size': '400% 400%',
+                  'background-position': 'center top'
+                },
+                '50%': {
+                  'background-size': '200% 200%',
+                  'background-position': 'center bottom'
+                }
+              },
+              'gradient-x': {
+                '0%, 100%': {
+                  'background-size': '200% 200%',
+                  'background-position': 'left center'
+                },
+                '50%': {
+                  'background-size': '200% 200%',
+                  'background-position': 'right center'
+                }
+              },
+              'gradient-xy': {
+                '0%, 100%': {
+                  'background-size': '400% 400%',
+                  'background-position': 'left center'
+                },
+                '50%': {
+                  'background-size': '200% 200%',
+                  'background-position': 'right center'
+                }
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      .glass {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .dark .glass {
+        background: rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      .dark ::-webkit-scrollbar-track {
+        background: #1e1b4b;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #8b5cf6;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #7c3aed;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.33.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50 text-slate-900 dark:bg-[#030712] dark:text-slate-100 antialiased overflow-x-hidden">
+    <div id="root"></div>
+  </body>
+</html>

@@ -24,12 +24,13 @@ const AIConsultant: React.FC = () => {
         You are an AI consultant for "Hashmi Digitals". 
         A potential client is asking: "${query}".
         
-        We have five main apps in our portfolio:
+        We have six main apps in our portfolio:
         1. TATM: AI-Powered Task Automation & Time Management. Best for individual power users or small teams needing smart scheduling.
-        2. ELC Smart Education: Intelligent LMS & Educational Platform. Best for schools, online courses, and corporate training.
-        3. Prince Plastic: Industrial ERP & Inventory Management. Best for manufacturing companies, factories, and B2B industrial sales.
-        4. FA Task Manager: Professional Agile Productivity Suite. Best for agencies, dev teams, and large organizations needing Kanban/Velocity tools.
-        5. Asghar Builders: Luxury Real Estate CRM & Property Portal. Best for builders, realtors, and construction companies.
+        2. Hashmi Travels Books: Modern Travel & Booking Management System. Best for travel agencies and tour operators.
+        3. ELC Smart Education: Intelligent LMS & Educational Platform. Best for schools, online courses, and corporate training.
+        4. Prince Plastic: Industrial ERP & Inventory Management. Best for manufacturing companies, factories, and B2B industrial sales.
+        5. FA Task Manager: Professional Agile Productivity Suite. Best for agencies, dev teams, and large organizations needing Kanban/Velocity tools.
+        6. Asghar Builders: Luxury Real Estate CRM & Property Portal. Best for builders, realtors, and construction companies.
 
         Recommend the best app based on their query or explain how Hashmi Digitals can build a custom solution. 
         Keep your tone professional, premium, and concise. Format with bullet points if helpful.
@@ -75,7 +76,7 @@ const AIConsultant: React.FC = () => {
                 type="text" 
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="e.g. I need a tool for my manufacturing unit to track production..."
+                placeholder="e.g. I need a tool for my travel agency to manage bookings..."
                 className="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl py-4 pl-6 pr-16 focus:outline-none focus:ring-2 focus:ring-brand-500 transition-all shadow-inner"
               />
               <button 

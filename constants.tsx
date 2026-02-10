@@ -14,6 +14,17 @@ export const APPLICATIONS: Application[] = [
     techStack: ['Next.js', 'Tailwind', 'Gemini AI', 'Supabase']
   },
   {
+    id: 'hashmi-travels',
+    name: 'Hashmi Travels Books',
+    description: 'Modern Travel Management & Booking System.',
+    longDescription: 'Hashmi Travels Books is a full-featured travel platform designed for modern agencies. It integrates real-time booking engines with a sleek, user-friendly interface for managing global itineraries.',
+    category: Category.Travel,
+    url: 'https://hashmi-travels-books.vercel.app/',
+    imageUrl: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=1935&auto=format&fit=crop',
+    features: ['Real-time Booking Engine', 'Dynamic Itinerary Planner', 'Automated Confirmation System'],
+    techStack: ['React', 'Next.js', 'PostgreSQL', 'Tailwind']
+  },
+  {
     id: 'elc-education',
     name: 'ELC Smart Education',
     description: 'The Future of Learning: Intelligent Educational Ecosystem.',

@@ -6,6 +6,7 @@ export enum Category {
   RealEstate = 'Real Estate',
   Education = 'Education',
   Industrial = 'Industrial',
+  Travel = 'Travel',
   All = 'All'
 }
 
